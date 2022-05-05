@@ -1,0 +1,271 @@
+:root {
+    --vermelho: #E50914;
+    --preta: #141414;
+    --purple: #9920ea;
+    --purple-black: #5e1580;
+    --white: #fff;
+    --gray: #ccc;
+}
+
+/*elementos base*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preta);
+    font-family: 'Arial', 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black, Times';
+    font-size: 40px;
+    background: url('../img/spiderweb.gif');
+    background-size: 70%;
+    background-repeat: no-repeat;
+}
+
+header nav a,
+.carrossel a {
+    text-decoration: none;
+
+    color: #aaa;
+    margin-right: 10px;
+
+}
+
+header nav a:hover {
+    color: #fff;
+    text-decoration-line: underline;
+}
+
+.carrossel a:hover {
+    color: #fff;
+    text-decoration-line: underline;
+}
+
+/*filme principal*/
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)), url('../img/filme-principal-spiderman.jpg');
+    height: 600px;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.filme-principal .descricao {
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.titulo {
+    margin-top: 15%;
+    font: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botoes .btn-filme-principal {
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: 1s ease all;
+}
+
+.btn-filme-principal:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn-filme-principal i {
+    padding-right: 10px;
+}
+
+.container {
+    margin-left: 10px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.imagens-carrossel {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.imagens-carrossel:hover {
+    transform: scale(1.1);
+    transition: .5s;
+    border-radius: 100%;
+}
+
+.carrossel {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+.carrossel h3 {
+    text-align: left;
+    color: white;
+}
+
+/*formatacao estilo video trailer*/
+.trailer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    background: rgba(0, 0, 0, 0.95);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.trailer.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.trailer video {
+    position: relative;
+    max-width: 900px;
+    outline: none;
+}
+
+/*configura o botao fechar do video na página*/
+.btnfechar {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    filter: invert(1);
+    max-width: 32px;
+}
+
+/*configuracao de estilo dos botoes de like*/
+.btn {
+    width: 20px;
+    height: 20px;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30%;
+    padding: 200px;
+}
+  
+  .btn-curtir {
+    padding: 1.5rem 1.5rem 1.5rem 6rem;
+    font-size: 15px;
+  }
+   
+  /* Icone do botão */
+  .btn-icone {
+    display: inline-block;
+    width: 32px;
+    height: 36px;
+    position: absolute;
+    left: 1.5rem;
+    transform: rotate(0deg);
+  }
+  
+  /* Cor do icone e pulsar */
+  .curtido .btn--icone-curtir {
+    transform: scale(2);
+  }
+  
+  .btn:not(.curtido).btn--icone-curtido {
+    transform: scale(-2);
+  }
+  
+  .curtido .btn--icone-curtir,
+  .btn--icone-curtido {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .btn--icone-curtir,
+  .curtido .btn--icone-curtido {
+    opacity: 1;
+    left: 1.5rem;
+  }
+  
+  /*-- Conteudo do botão -- */
+  .btn-conteudo {
+    display: inline-block;
+  }
+  
+  /* Rotação */
+  .btn:not(.curtido) .btn-conteudo--curtido {
+    transform: translate(130px);
+  }
+  
+  .btn:not(.curtido) .btn-conteudo--curtir {
+    transform: translate(-99px);
+  }
+  
+  .curtido .btn-conteudo--curtir {
+    transform: translate(100px);
+  }
+  
+  .btn-conteudo--curtido {
+    transform: translate(-50px);
+  }
+  
+  /* Classes que utilizam propriedades iguais */
+  .btn,
+  .btn-curtir,
+  .btn-icone,
+  .curtido,
+  .btn-conteudo,
+  .btn-conteudo--curtir,
+  .btn-conteudo--curtir {
+    transition: .5s;
+  }
+  
+  .btn:hover.curtido .btn-conteudo,
+  .btn.curtido:hover .btn-icone {
+    color: var(--vermelho);
+  }
+  
+  .btn:hover,
+  .btn:hover .btn-icone {
+    color: var(--white);
+  }
+  
+  .curtido .btn--icone-curtir,
+  .btn--icone-curtido,
+  .curtido .btn-conteudo {
+    color: var(--vermelho);
+  }

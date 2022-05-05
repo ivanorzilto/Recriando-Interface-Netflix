@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+
+    <!--referencia Jquery-->
+    <link rel="stylesheet" href="style/owl carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl carousel/owl.theme.default.min.css">
+
+    <!-- referencia responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+
+    <!--link rferencia para botoes de like-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <title>SPIDERFLIX</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo" class="container">
+            <h2 class="logo">SPIDERFLIX</h2>
+            <nav>
+                <a class="ancora" href="#carrossel-filmes">Filmes</a>
+                <a class="ancora" href="#carrossel-series">Séries</a>
+                <a class="ancora" href="#carrossel-coletaneas">Coletâneas</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="filme-principal">
+            <div class="container">
+                <h3 class="titulo">HOMEM ARANHA-SEM VOLTA PARA CASA</h3>
+                <p class="descricao">Peter Parker é desmascarado e não consegue mais separar sua vida
+                    normal dos grandes riscos de ser um super-herói. Quando ele pede ajuda ao
+                    Doutor Estranho, os riscos se tornam ainda mais perigosos, e o forçam a
+                    descobrir o que realmente significa ser o Homem-Aranha.</p>
+                <div class="botoes">
+                    <button role="button" class="btn-filme-principal" onclick="toogle();">
+                        <i class="fa-solid fa-circle-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <button role="button" class="btn-filme-principal">
+                        <i class="fa-solid fa-circle-info"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+                </div>
+                <div class="trailer">
+                    <iframe width="860" height="483" src="https://www.youtube.com/embed/CyiiEJRZjSU"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <img class="btnfechar" src="img/botaofechar.png" alt="" onclick="toogle();">
+                </div>
+            </div>
+        </div>
+        <div id="carrossel-filmes" class="carrossel">
+            <h3>Filmes</h3>
+            <div class="owl-carousel owl-theme">
+                <div class="itens-carrossel">
+                    <img id="filme01" class="imagens-carrossel" src="img/filmes/spiderman01.jpg" alt=""
+                        onclick="alterarImagem('filme-principal','img/spiderman01.jpg')">
+                    <div id="btn1" class="btn btn-curtir">
+                        <i class="btn-icone btn--icone-curtir">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-icone btn--icone-curtido">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-conteudo btn-conteudo--curtido">Curtido</i>
+                        <i class="btn-conteudo btn-conteudo--curtir">Curtir</i>
+                    </div>
+                </div>
+                <div class="itens-carrossel">
+                    <img id="filme02" class="imagens-carrossel" src="img/filmes/spiderman02.jpg" alt="">
+                    <div id="btn2" class="btn btn-curtir">
+                        <i class="btn-icone btn--icone-curtir">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-icone btn--icone-curtido">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-conteudo btn-conteudo--curtido">Curtido</i>
+                        <i class="btn-conteudo btn-conteudo--curtir">Curtir</i>
+                    </div>
+                </div>
+                <div class="itens-carrossel">
+                    <img id="filme03" class="imagens-carrossel" src="img/filmes/spiderman03.jpg" alt="" onclick=set>
+                    <div id="btn3" class="btn btn-curtir">
+                        <i class="btn-icone btn--icone-curtir">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-icone btn--icone-curtido">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-conteudo btn-conteudo--curtido">Curtido</i>
+                        <i class="btn-conteudo btn-conteudo--curtir">Curtir</i>
+                    </div>
+                </div>
+                <div class="itens-carrossel">
+                    <img id="filme04" class="imagens-carrossel" src="img/filmes/spiderman04.jpg" alt="">
+                    <div id="btn4" class="btn btn-curtir">
+                        <i class="btn-icone btn--icone-curtir">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-icone btn--icone-curtido">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-conteudo btn-conteudo--curtido">Curtido</i>
+                        <i class="btn-conteudo btn-conteudo--curtir">Curtir</i>
+                    </div>
+                </div>
+                <div class="itens-carrossel">
+                    <img id="filme05" class="imagens-carrossel" src="img/filmes/spiderman05.jpg" alt="">
+                    <div id="btn5" class="btn btn-curtir">
+                        <i class="btn-icone btn--icone-curtir">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-icone btn--icone-curtido">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-conteudo btn-conteudo--curtido">Curtido</i>
+                        <i class="btn-conteudo btn-conteudo--curtir">Curtir</i>
+                    </div>
+                </div>
+                <div class="itens-carrossel">
+                    <img id="filme06" class="imagens-carrossel" src="img/filmes/spiderman06.jpg" alt="">
+                    <div id="btn6" class="btn btn-curtir">
+                        <i class="btn-icone btn--icone-curtir">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-icone btn--icone-curtido">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-conteudo btn-conteudo--curtido">Curtido</i>
+                        <i class="btn-conteudo btn-conteudo--curtir">Curtir</i>
+                    </div>
+                </div>
+                <div class="itens-carrossel">
+                    <img id="filme07" class="imagens-carrossel" src="img/filmes/spiderman07.jpg" alt="">
+                    <div id="btn7" class="btn btn-curtir">
+                        <i class="btn-icone btn--icone-curtir">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-icone btn--icone-curtido">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-conteudo btn-conteudo--curtido">Curtido</i>
+                        <i class="btn-conteudo btn-conteudo--curtir">Curtir</i>
+                    </div>
+                </div>
+                <div class="itens-carrossel">
+                    <img id="filme08" class="imagens-carrossel" src="img/filmes/spiderman08.jpg" alt="">
+                    <div id="btn8" class="btn btn-curtir">
+                        <i class="btn-icone btn--icone-curtir">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-icone btn--icone-curtido">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-conteudo btn-conteudo--curtido">Curtido</i>
+                        <i class="btn-conteudo btn-conteudo--curtir">Curtir</i>
+                    </div>
+                </div>
+                <div class="itens-carrossel">
+                    <img id="filme09" class="imagens-carrossel" src="img/filmes/spiderman09.jpg" alt="">
+                    <div id="btn9" class="btn btn-curtir">
+                        <i class="btn-icone btn--icone-curtir">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-icone btn--icone-curtido">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-conteudo btn-conteudo--curtido">Curtido</i>
+                        <i class="btn-conteudo btn-conteudo--curtir">Curtir</i>
+                    </div>
+                </div>
+                <div class="itens-carrossel">
+                    <img id="filme10" class="imagens-carrossel" src="img/filmes/spiderman10.jpg" alt="">
+                    <div id="btn10" class="btn btn-curtir">
+                        <i class="btn-icone btn--icone-curtir">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-icone btn--icone-curtido">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-conteudo btn-conteudo--curtido">Curtido</i>
+                        <i class="btn-conteudo btn-conteudo--curtir">Curtir</i>
+                    </div>
+                </div>
+                <div class="itens-carrossel">
+                    <img id="filme11" class="imagens-carrossel" src="img/filmes/spiderman11.jpg" alt="">
+                    <div id="btn11" class="btn btn-curtir">
+                        <i class="btn-icone btn--icone-curtir">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-icone btn--icone-curtido">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-conteudo btn-conteudo--curtido">Curtido</i>
+                        <i class="btn-conteudo btn-conteudo--curtir">Curtir</i>
+                    </div>
+                </div>
+                <div class="itens-carrossel">
+                    <img id="filme12" class="imagens-carrossel" src="img/filmes/spiderman12.jpg" alt="">
+                    <div id="btn12" class="btn btn-curtir">
+                        <i class="btn-icone btn--icone-curtir">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-icone btn--icone-curtido">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-conteudo btn-conteudo--curtido">Curtido</i>
+                        <i class="btn-conteudo btn-conteudo--curtir">Curtir</i>
+                    </div>
+                </div>
+                <div class="itens-carrossel">
+                    <img id="filme13" class="imagens-carrossel" src="img/filmes/spiderman13.jpg" alt="">
+                    <div id="btn13" class="btn btn-curtir">
+                        <i class="btn-icone btn--icone-curtir">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-icone btn--icone-curtido">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-conteudo btn-conteudo--curtido">Curtido</i>
+                        <i class="btn-conteudo btn-conteudo--curtir">Curtir</i>
+                    </div>
+                </div>
+                <div class="itens-carrossel">
+                    <img id="filme14" class="imagens-carrossel" src="img/filmes/spiderman14.jpg" alt="">
+                    <div id="btn14" class="btn btn-curtir">
+                        <i class="btn-icone btn--icone-curtir">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-icone btn--icone-curtido">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-conteudo btn-conteudo--curtido">Curtido</i>
+                        <i class="btn-conteudo btn-conteudo--curtir">Curtir</i>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#logo">Topo da Página</a>
+        </div>
+
+        <div id="carrossel-series" class="carrossel">
+            <h3>Séries</h3>
+            <div class="owl-carousel owl-theme">
+                <div class="itens-carrossel">
+                    <img id="serie01" class="imagens-carrossel" src="img/series/spiderseries-01.jpg" alt=""
+                        onclick="alterarImagem('filme-principal','img/spiderman01.jpg')">
+                    <div id="btn15" class="btn btn-curtir">
+                        <i class="btn-icone btn--icone-curtir">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-icone btn--icone-curtido">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-conteudo btn-conteudo--curtido">Curtido</i>
+                        <i class="btn-conteudo btn-conteudo--curtir">Curtir</i>
+                    </div>
+                </div>
+                <div class="itens-carrossel">
+                    <img id="serie02" class="imagens-carrossel" src="img/series/spiderseries-02.jpg" alt="">
+                    <div id="btn16" class="btn btn-curtir">
+                        <i class="btn-icone btn--icone-curtir">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-icone btn--icone-curtido">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-conteudo btn-conteudo--curtido">Curtido</i>
+                        <i class="btn-conteudo btn-conteudo--curtir">Curtir</i>
+                    </div>
+                </div>
+                <div class="itens-carrossel">
+                    <img id="serie03" class="imagens-carrossel" src="img/series/spiderseries-03.jpg" alt="" onclick=set>
+                    <div id="btn17" class="btn btn-curtir">
+                        <i class="btn-icone btn--icone-curtir">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-icone btn--icone-curtido">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-conteudo btn-conteudo--curtido">Curtido</i>
+                        <i class="btn-conteudo btn-conteudo--curtir">Curtir</i>
+                    </div>
+                </div>
+                <div class="itens-carrossel">
+                    <img id="serie04" class="imagens-carrossel" src="img/series/spiderseries-04.jpg" alt="">
+                    <div id="btn18" class="btn btn-curtir">
+                        <i class="btn-icone btn--icone-curtir">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-icone btn--icone-curtido">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-conteudo btn-conteudo--curtido">Curtido</i>
+                        <i class="btn-conteudo btn-conteudo--curtir">Curtir</i>
+                    </div>
+                </div>
+                <div class="itens-carrossel">
+                    <img id="serie05" class="imagens-carrossel" src="img/series/spiderseries-05.jpg" alt="">
+                    <div id="btn19" class="btn btn-curtir">
+                        <i class="btn-icone btn--icone-curtir">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-icone btn--icone-curtido">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-conteudo btn-conteudo--curtido">Curtido</i>
+                        <i class="btn-conteudo btn-conteudo--curtir">Curtir</i>
+                    </div>
+                </div>
+                <div class="itens-carrossel">
+                    <img id="serie06" class="imagens-carrossel" src="img/series/spiderseries-06.jpg" alt="">
+                    <div id="btn20" class="btn btn-curtir">
+                        <i class="btn-icone btn--icone-curtir">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-icone btn--icone-curtido">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-conteudo btn-conteudo--curtido">Curtido</i>
+                        <i class="btn-conteudo btn-conteudo--curtir">Curtir</i>
+                    </div>
+                </div>
+                <div class="itens-carrossel">
+                    <img id="serie07" class="imagens-carrossel" src="img/series/spiderseries-07.jpg" alt="">
+                    <div id="btn21" class="btn btn-curtir">
+                        <i class="btn-icone btn--icone-curtir">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-icone btn--icone-curtido">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-conteudo btn-conteudo--curtido">Curtido</i>
+                        <i class="btn-conteudo btn-conteudo--curtir">Curtir</i>
+                    </div>
+                </div>
+                <div class="itens-carrossel">
+                    <img id="serie08" class="imagens-carrossel" src="img/series/spiderseries-08.jpg" alt="">
+                    <div id="btn22" class="btn btn-curtir">
+                        <i class="btn-icone btn--icone-curtir">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-icone btn--icone-curtido">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-conteudo btn-conteudo--curtido">Curtido</i>
+                        <i class="btn-conteudo btn-conteudo--curtir">Curtir</i>
+                    </div>
+                </div>
+                <div class="itens-carrossel">
+                    <img id="serie09" class="imagens-carrossel" src="img/series/spiderseries-09.jpg" alt="">
+                    <div id="btn23" class="btn btn-curtir">
+                        <i class="btn-icone btn--icone-curtir">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-icone btn--icone-curtido">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-conteudo btn-conteudo--curtido">Curtido</i>
+                        <i class="btn-conteudo btn-conteudo--curtir">Curtir</i>
+                    </div>
+                </div>
+                <div class="itens-carrossel">
+                    <img id="serie10" class="imagens-carrossel" src="img/series/spiderseries-10.jpg" alt="">
+                    <div id="btn24" class="btn btn-curtir">
+                        <i class="btn-icone btn--icone-curtir">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-icone btn--icone-curtido">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-conteudo btn-conteudo--curtido">Curtido</i>
+                        <i class="btn-conteudo btn-conteudo--curtir">Curtir</i>
+                    </div>
+                </div>
+                <div class="itens-carrossel">
+                    <img id="serie11" class="imagens-carrossel" src="img/series/spiderseries-11.jpg" alt="">
+                    <div id="btn25" class="btn btn-curtir">
+                        <i class="btn-icone btn--icone-curtir">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-icone btn--icone-curtido">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-conteudo btn-conteudo--curtido">Curtido</i>
+                        <i class="btn-conteudo btn-conteudo--curtir">Curtir</i>
+                    </div>
+                </div>
+            </div>
+            <a href="#logo">Topo da Página</a>
+        </div>
+        <div id="carrossel-coletaneas" class="carrossel">
+            <h3>Coletâneas</h3>
+            <div class="owl-carousel owl-theme">
+                <div class="itens-carrossel">
+                    <img id="coletanea01" class="imagens-carrossel" src="img/coletaneas/spidercoletanea-01.jpg" alt=""
+                        onclick="alterarImagem('filme-principal','img/spiderman01.jpg')">
+                    <div id="btn26" class="btn btn-curtir">
+                        <i class="btn-icone btn--icone-curtir">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-icone btn--icone-curtido">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-conteudo btn-conteudo--curtido">Curtido</i>
+                        <i class="btn-conteudo btn-conteudo--curtir">Curtir</i>
+                    </div>
+                </div>
+                <div class="itens-carrossel">
+                    <img id="coletanea02" class="imagens-carrossel" src="img/coletaneas/spidercoletanea-02.jpg" alt="">
+                    <div id="btn27" class="btn btn-curtir">
+                        <i class="btn-icone btn--icone-curtir">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-icone btn--icone-curtido">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-conteudo btn-conteudo--curtido">Curtido</i>
+                        <i class="btn-conteudo btn-conteudo--curtir">Curtir</i>
+                    </div>
+                </div>
+                <div class="itens-carrossel">
+                    <img id="coletanea03" class="imagens-carrossel" src="img/coletaneas/spidercoletanea-03.jpg" alt=""
+                        onclick=set>
+                    <div id="btn28" class="btn btn-curtir">
+                        <i class="btn-icone btn--icone-curtir">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-icone btn--icone-curtido">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-conteudo btn-conteudo--curtido">Curtido</i>
+                        <i class="btn-conteudo btn-conteudo--curtir">Curtir</i>
+                    </div>
+                </div>
+                <div class="itens-carrossel">
+                    <img id="coletanea04" class="imagens-carrossel" src="img/coletaneas/spidercoletanea-04.jpg" alt="">
+                    <div id="btn29" class="btn btn-curtir">
+                        <i class="btn-icone btn--icone-curtir">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-icone btn--icone-curtido">
+                            <i class="fa fa-heart"></i>
+                        </i>
+                        <i class="btn-conteudo btn-conteudo--curtido">Curtido</i>
+                        <i class="btn-conteudo btn-conteudo--curtir">Curtir</i>
+                    </div>
+                </div>
+            </div>
+            <a href="#logo">Topo da Página</a>
+        </div>
+        <script src="https://kit.fontawesome.com/c661ecbc5f.js" crossorigin="anonymous"></script>
+        <script src="js/owl carousel/jquery.min.js"></script>
+        <script src="js/owl carousel/owl.carousel.min.js"></script>
+        <script src="js/owl carousel/setup carousel.js"></script>
+        <script src="js/owl carousel/javascipt.js"></script>
+        <script src="https://www.youtube.com/iframe_api"></script>
+
+        <!--link referencia para fechar o video sem continuar no play-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+        <!--Altera o nome da classe trailer para trailer-active-->
+        <script type="text/javascript">
+            function toogle() {
+                var trailer = document.querySelector(".trailer")
+                var video = document.querySelector(".video")
+                trailer.classList.toggle("active")
+                video.pause()
+                video.currentTime = 0;
+            }
+        </script>
+
+        <!--funcao JS para botoes de like-->
+        <script>
+            for (let i = 1; i <= 29; i++) {
+                const ii = document.querySelector("#btn"+i);
+                ii.addEventListener('click', function () {
+                    ii.classList.toggle('curtido');
+                })
+            }
+        </script>
+        
+        <!--funcao javascript para alterar imagem
+        <script type="text/javascript">
+            function alterarImagem(idImagem, caminhoNovaImagem) {
+                document.getElementById(idImagem).style.backgroundOrigin(caminhoNovaImagem);
+            } 
+        </script>-->
+    </main>
+</body>
+<!--src = caminhoNovaImagem;-->
+
+</html>
