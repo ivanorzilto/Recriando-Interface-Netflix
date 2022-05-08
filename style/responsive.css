@@ -9,12 +9,14 @@
         width: 250px;
         height: 50px;
     }
+   
 }
 
 @media screen and (min-width:1000px){
     .descricao{
         width: 50%;
     }
+    
 }
 
 @media (max-width:991px)
